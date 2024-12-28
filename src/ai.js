@@ -7,6 +7,7 @@ You are an assistant that receives a list of ingredients that a user has and sug
 
 console.log(import.meta.env.VITE_ANTHROPIC_API_KEY);
 console.log(import.meta.env.VITE_HF_ACCESS_TOKEN);
+
 const anthropic = new Anthropic({
   apiKey: import.meta.env.VITE_ANTHROPIC_API_KEY,
   dangerouslyAllowBrowser: true,
