@@ -20,8 +20,8 @@ export default function Main() {
   }, [recipe]
   );
   async function getRecipe() {
-    const generatedRecipeMarkdown = await getRecipeFromClaude(ingredients);
-    // const generatedRecipeMarkdown = await getRecipeFromMistral(ingredients);
+    // const generatedRecipeMarkdown = await getRecipeFromClaude(ingredients);
+    const generatedRecipeMarkdown = await getRecipeFromMistral(ingredients);
     setRecipe(generatedRecipeMarkdown);
     console.log(generatedRecipeMarkdown);
 
