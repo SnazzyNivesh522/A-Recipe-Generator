@@ -1,7 +1,7 @@
 import Anthropic from "@anthropic-ai/sdk";
 import { HfInference } from "@huggingface/inference";
 import dotenv from "dotenv";
-import process from "node:process";
+import process from "process";
 
 dotenv.config();
 
